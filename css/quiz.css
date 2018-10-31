@@ -1,0 +1,609 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+*, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+
+/*-- big --*/
+@media screen and (min-width: 991px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        margin: 0 auto;
+        width: 750px;
+        /*border: 3px solid blue;*/
+
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0;
+    }
+
+    #registerBody {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        margin: 10px auto;
+        width: 750px;
+        border: 3px solid white;
+    }
+
+    #quizBody {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        margin: 10px auto;
+        width: 750px;
+        border: 3px solid #C0C0C0;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: orange;
+        text-align: center;
+        font-size: 3em;
+        margin: 0.5em;
+    }
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: green;
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    label {
+        float: left;
+        width: 20em;
+        text-align: right;
+    }
+
+    input {
+        margin-left: 1em;
+        margin-bottom: .5em;
+    }
+
+    input[type="button"] {
+        display: block;
+        margin: 1.5em auto;
+        width: 90%;
+        font-size: 20px;
+        background-color: #cc0000;
+        border: none;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    input[type="radio"] {
+        width: 13px;
+        height: 13px;
+        vertical-align: text-top;
+    }
+
+    span {
+        color: yellow;
+    }
+
+    section.home {
+        margin: 30px auto;
+        width: 100%;
+    }
+    section.home a {
+        float: left;
+        padding: 0;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    section.home a h1:hover {
+        color: orange;
+    }
+
+    section.home a h1 {
+        font-size: 2em;
+        height: 3.5em;
+        color: white;
+        text-decoration: none;
+    }
+    section.home a img {
+        width: 90%;
+        margin: 10px;
+    }
+
+    img {
+        padding: 0px;
+        margin: 0px auto;
+        width: 750px;
+    }
+
+    section.main {
+        padding: 5%;
+        margin: 0 auto;
+        width: 100%;
+    }
+    section.main div {
+        float: left;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        width: 50%;
+    }
+
+    section.main div h1:hover {
+        color: orange;
+    }
+
+    section.main div h1 {
+        font-size: 2em;
+        color: white;
+        text-decoration: none;
+    }
+    section.main div img {
+        width: 90%;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0.2em;
+        font-size: 2em;
+        line-height: 1.3em;
+    }
+    input[type=radio] {
+        border: 0px;
+        width: 20px;
+        height: 2em;
+    }
+    p {
+        font-family: 'Rokkitt', serif;
+    }
+    /* Quiz Classes */
+    .quizContainer {
+        width: 800px;
+        margin: 50px auto;
+        border: 2px solid #ccc;
+        background: black;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px #ccc;
+        font-family: Trebuchet, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #353535;
+        line-height: 1.5em;
+    }
+    .nextButton {
+        box-shadow: 3px 3px 5px #888;
+        border-radius: 6px;
+        width: 7em;
+        text-align: center;
+        background-color: orange;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        position: relative;
+        margin: auto;
+        padding: 0.5em;
+        border: 1px solid #fff;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        text-decoration: none;
+    }
+
+    #registerButton, #loginButton {
+        width: 30%;
+    }
+    .nextButton:hover {
+        background-color: gray;
+    }
+
+    .quizAgain, .logOut {
+        width: 49% !important;
+        float: left;
+        margin: 1% 0.5% !important;
+    }
+    .question {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        border-radius: 6px;
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .quizMessage {
+        background-color: white;
+        border-radius: 6px;
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        padding: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+    }
+    .choiceList {
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+    }
+    .result {
+        width: 30%;
+        height: auto;
+        border-radius: 6px;
+        background-color: gray;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .tbInfo {
+        width: 100%;
+        margin: 0 20px 20px 20px;
+    }
+    .tbInfo tbody tr td {
+        font-weight: normal;
+        padding: 5px 10px;
+        border: #000 solid 2px;
+    }
+    .tbResults {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .tbResults thead tr td {
+        font-weight: bold;
+        background: #333;
+        padding: 5px 10px;
+        border: #000 solid 2px;
+    }
+    .tbResults tbody tr td {
+        font-weight: normal;
+        background: #666;
+        padding: 5px 10px;
+        border: #000 solid 2px;
+    }
+    .playerInfo label {
+        width: 100%;
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+        color: orange;
+    }
+    .resultMsgH2 {
+        text-align: center;
+    }
+    fieldset.info {
+        width: 100%;
+        border: #fff solid 1px;
+    }
+    fieldset.info legend {
+        padding: 5%;
+        margin: 0 27%;
+        font-size: 200%;
+    }
+    .playerInfo {
+        margin: -50px 0 0 0;
+        padding: 5%;
+    }
+    .playerInfo ul li {
+        font-size: 14px;
+    }
+}
+
+/*-- small --*/
+@media screen and (max-width: 990px) {
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        margin: 0 auto;
+        width: 100%;
+        /*border: 3px solid blue;*/
+
+    }
+
+    .logo {
+        width: 100%;
+        margin: 0;
+    }
+
+    #registerBody {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        margin: 10px auto;
+        width: 100%;
+        border: 3px solid white;
+    }
+
+    #quizBody {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        margin: 10px auto;
+        width: 750px;
+        border: 3px solid #C0C0C0;
+    }
+
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: orange;
+        text-align: center;
+        font-size: 175%;
+        padding: 5%;
+    }
+
+    a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    label {
+        width: 100%;
+        text-align: right;
+        display: block;
+        font-size: 130%;
+        padding: 2%;
+    }
+    
+    #registerForm, #loginForm {
+        padding: 0 5% 5% 5%;
+    }
+    #registerForm label, #loginForm label {
+        text-align: left;
+        margin: 5% 0 0 0;
+    }
+    #registerForm input, #loginForm input {
+        margin: 1% 1% 2% 1%;
+        width: 99%;
+        height: 3em;
+    }
+    
+    h2.welcome {
+        text-align: center;
+        font-size: 130%;
+    }
+
+    input {
+        margin-left: 1em;
+        margin-bottom: .5em;
+    }
+
+    input[type="button"] {
+        display: block;
+        margin: 10px auto;
+        width: 50%;
+        font-size: 20px;
+        background-color: #cc0000;
+        border: none;
+        color: #fff;
+    }
+
+    input[type="radio"] {
+        width: 13px;
+        height: 13px;
+        vertical-align: text-top;
+    }
+
+    span {
+        color: red;
+    }
+
+    section.home {
+        padding: 0;
+        margin: 30px auto;
+        width: 100%;
+    }
+    section.home a {
+        float: left;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        width: 50%;
+    }
+
+    section.home a h1:hover {
+        color: orange;
+    }
+
+    section.home a h1 {
+        font-size: 1em;
+        height: 3.5em;
+        color: white;
+        text-decoration: none;
+    }
+    section.home a img {
+        width: 90%;
+        margin: 10px;
+    }
+
+    img {
+        padding: 0px;
+        margin: 0px auto;
+        width: 750px;
+    }
+
+    section.main {
+        padding: 5%;
+        margin: 0 auto;
+        width: 100%;
+    }
+    section.main div {
+        float: left;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        width: 50%;
+    }
+
+    section.main div h1:hover {
+        color: orange;
+    }
+
+    section.main div h1 {
+        font-size: 120%;
+        color: white;
+        text-decoration: none;
+    }
+    section.main div img {
+        width: 95%;
+    }
+    section.main div input[type="button"] {
+        width: 95%;
+        margin: 2% auto;
+    }
+
+    ul {
+        list-style: none;
+    }
+    li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        padding-top: 5px;
+    }
+    input[type=radio] {
+        border: 0px;
+        width: 20px;
+        height: 2em;
+    }
+    p {
+        font-family: 'Rokkitt', serif;
+    }
+    /* Quiz Classes */
+    .quizContainer {
+        width: 100%;
+        margin: 2% auto;
+        border: 2px solid #ccc;
+        background: black;
+        border-radius: 10px;
+        padding: 3%;
+        box-shadow: 0 0 10px #ccc;
+        font-family: Trebuchet, Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        color: #353535;
+    }
+    .nextButton {
+        box-shadow: 3px 3px 5px #888;
+        width: 50%;
+        text-align: center;
+        background-color: orange;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        position: relative;
+        margin: 10% auto 0 auto;
+        padding: 5%;
+        border: 1px solid #fff;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .nextButton:hover {
+        background-color: gray;
+    }
+    
+    .choiceList li {
+        font-size: 130%;
+        padding: 2%;
+    }
+
+    .question {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 120%;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        border-radius: 6px;
+        color: white;
+        text-align: center;
+        padding: 5%;
+    }
+    .quizMessage {
+        background-color: white;
+        border-radius: 6px;
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        padding: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+    }
+    .choiceList {
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+    }
+    .result {
+        width: 30%;
+        height: auto;
+        border-radius: 6px;
+        background-color: gray;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .tbResults {
+        width: 100%;
+        margin: 10% auto
+    }
+    .tbResults thead tr td {
+        font-weight: bold;
+        background: #333;
+        padding: 1%;
+    }
+    .tbResults tbody tr td {
+        font-weight: normal;
+        background: #666;
+        padding: 1%;
+    }
+    .tbInfo {
+        width: 100%;
+        margin: 0;
+    }
+    .tbInfo tbody tr td {
+        font-weight: normal;
+        padding: 5px 10px;
+        border: #000 solid 2px;
+    }
+    .playerInfo label {
+        width: 100%;
+        font-size: 40px;
+        padding: 10px;
+        text-align: center;
+        color: orange;
+    }
+    .resultMsgH2 {
+        text-align: center;
+    }
+    fieldset.info {
+        width: 100%;
+        border: #fff solid 1px;
+    }
+    fieldset.info legend {
+        padding: 5%;
+        margin: 0 14%;
+        font-size: 150%;
+    }
+    .playerInfo {
+        margin: -50px 0 0 0;
+        padding: 5%;
+    }
+    .playerInfo ul li {
+        font-size: 14px;
+    }
+}
+
